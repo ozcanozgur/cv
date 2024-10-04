@@ -4,8 +4,8 @@ import { GitHubIcon, LinkedInIcon, MediumIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "Ozcan Ozgur",
   initials: "OZ",
-  location: "Istanbul, Turkey, CET",
-  locationLink: "https://www.google.com/maps/place/Istanbul",
+  location: "Varna, Bulgaria",
+  locationLink: "https://www.google.com/maps/place/Varna",
   about:
     "Dedicated Software Engineer specializing in the creation of premium quality products.",
   summary:
@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://ozcanozgur.com",
   contact: {
     email: "ozcanozgur123@gmail.com",
-    tel: "+905394947484",
+    tel: "+359 89 7482970",
     social: [
       {
         name: "GitHub",
