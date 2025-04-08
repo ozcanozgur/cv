@@ -1,11 +1,10 @@
-
 import { GitHubIcon, LinkedInIcon, MediumIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Ozcan Ozgur",
   initials: "OZ",
-  location: "Varna, Bulgaria",
-  locationLink: "https://www.google.com/maps/place/Varna",
+  location: "Sofia, Bulgaria",
+  locationLink: "https://www.google.com/maps/place/Sofia",
   about:
     "Dedicated Software Engineer specializing in the creation of premium quality products.",
   summary:
@@ -43,12 +42,22 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Wynshop",
+      link: "https://wynshop.com/",
+      badges: ["Remote"],
+      title: "Software Developer",
+      start: "2025",
+      end: null,
+      description:
+        "Building e-commerce solutions with React and React Native. Technologies: React, React Native, TypeScript",
+    },
+    {
       company: "Innovance Consultancy",
       link: "https://innovance.com.tr/",
       badges: ["Remote"],
       title: "Software Developer",
       start: "2023",
-      end: null,
+      end: "2025",
       description:
         "Developing and maintaining React & React Native applications. Technologies: React, React Native, TypeScript",
     },
@@ -83,13 +92,24 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Huawei HMS Core",
+      title: "Wynshop",
       techStack: [
-        "Lead React Native Developer",
-        "Typescript",
-        "Java",
-        "Swift",
+        "React",
+        "React Native",
+        "CMS",
+        "TypeScript",
+        "Redux",
+        "React Query",
       ],
+      description:
+        "Developing a modern e-commerce platform with dynamic content management system, powering mobile and web experiences across 20+ retail brands.",
+      link: {
+        href: "https://wynshop.com/",
+      },
+    },
+    {
+      title: "Huawei HMS Core",
+      techStack: ["Lead React Native Developer", "Typescript", "Java", "Swift"],
       description:
         "Developed React Native plugins, led development teams, and authored technical articles & documents. Managed community support.",
       link: {
@@ -107,7 +127,12 @@ export const RESUME_DATA = {
     },
     {
       title: "Letim",
-      techStack: ["React Native", "TypeScript", "Native Modules", "React Query"],
+      techStack: [
+        "React Native",
+        "TypeScript",
+        "Native Modules",
+        "React Query",
+      ],
       description:
         "Developed and maintained a React Native mobile wallet app focused on money transfers.",
       link: {
@@ -126,7 +151,8 @@ export const RESUME_DATA = {
     {
       title: "Sutbir",
       techStack: ["React Native", "TypeScript"],
-      description: "Developed a React Native app for managing livestock and distributing government financial aid to farmers.",
+      description:
+        "Developed a React Native app for managing livestock and distributing government financial aid to farmers.",
     },
     {
       title: "E-Vital",
