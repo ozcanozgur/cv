@@ -6,9 +6,9 @@ export const RESUME_DATA = {
   location: "Sofia, Bulgaria",
   locationLink: "https://www.google.com/maps/place/Sofia",
   about:
-    "Dedicated Software Engineer specializing in the creation of premium quality products.",
+    "Senior mobile engineer focused on building production-grade React Native applications and delivering high-quality products.",
   summary:
-    "As a Software Engineer, Specialized in taking products from concept to launch. Creating mobile apps and taking responsibility where individuals perform at their best. Currently, I work mostly with TypeScript, React, React Native. I have 5 years of experience working remotely and Hybrid with companies.",
+    "React Native-focused software engineer with experience building and shipping production mobile applications. Skilled in taking products from concept to launch using TypeScript, React, and React Native. Over 5 years of experience working remotely and in hybrid environments with international teams.",
   avatarUrl: "https://avatars.githubusercontent.com/u/13644092?v=4",
   personalWebsiteUrl: "https://ozcanozgur.com",
   contact: {
@@ -45,11 +45,11 @@ export const RESUME_DATA = {
       company: "Wynshop",
       link: "https://wynshop.com/",
       badges: ["Remote"],
-      title: "Software Developer",
+      title: "Senior React Native Developer",
       start: "2025",
       end: null,
       description:
-        "Building e-commerce solutions with React and React Native. Technologies: React, React Native, TypeScript",
+        "Building enterprise e-commerce solutions and mobile applications with React Native and TypeScript. Technologies: React, React Native, TypeScript",
     },
     {
       company: "Innovance Consultancy",
@@ -59,7 +59,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "2025",
       description:
-        "Developing and maintaining React & React Native applications. Technologies: React, React Native, TypeScript",
+        "Developing and maintaining fintech and high-traffic mobile applications with React and React Native. Technologies: React, React Native, TypeScript",
     },
     {
       company: "Huawei",
@@ -69,17 +69,7 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2023",
       description:
-        "Implemented new features of HMS(Huawei Mobile Service) Core, led a squad, community support, delivered comprehensive documentation, demos, and articles. Technologies: React Native, TypeScript, Java, Swift",
-    },
-    {
-      company: "Aktif Bank",
-      link: "https://www.aktifbank.com.tr/",
-      badges: ["On Site"],
-      title: "Intership",
-      start: "2021",
-      end: "2021",
-      description:
-        "Developed a Windows Form application to analyze and compare data between versions related to the transportation system. Technologies: C#, Windows Form Application, SQLite",
+        "Developed React Native HMS plugins, native integrations with Java and Swift, and supported the developer ecosystem with documentation, demos, and community support. Technologies: React Native, TypeScript, Java, Swift",
     },
   ],
   skills: [
@@ -102,16 +92,16 @@ export const RESUME_DATA = {
         "React Query",
       ],
       description:
-        "Developing a modern e-commerce platform with dynamic content management system, powering mobile and web experiences across 20+ retail brands.",
+        "Enterprise e-commerce platform with dynamic CMS powering mobile and web experiences for 20+ retail brands.",
       link: {
         href: "https://wynshop.com/",
       },
     },
     {
       title: "Huawei HMS Core",
-      techStack: ["Lead React Native Developer", "Typescript", "Java", "Swift"],
+      techStack: ["Lead React Native Developer", "TypeScript", "Java", "Swift"],
       description:
-        "Developed React Native plugins, led development teams, and authored technical articles & documents. Managed community support.",
+        "Developed React Native HMS plugins with native Java and Swift integrations; led development, authored technical docs, and managed community support.",
       link: {
         href: "https://github.com/HMS-Core/hms-react-native-plugin",
       },
@@ -120,7 +110,7 @@ export const RESUME_DATA = {
       title: "Vodafone Pay",
       techStack: ["React", "React Native", "TypeScript"],
       description:
-        "Developed a digital wallet application using React Native, focusing on mobile and back office solutions.",
+        "Digital wallet application built with React Native for mobile and back-office solutions.",
       link: {
         href: "https://www.vodafonepay.com.tr/",
       },
@@ -134,7 +124,7 @@ export const RESUME_DATA = {
         "React Query",
       ],
       description:
-        "Developed and maintained a React Native mobile wallet app focused on money transfers.",
+        "React Native mobile wallet application for money transfers with native module integrations.",
       link: {
         href: "https://letim.app/",
       },
@@ -143,22 +133,43 @@ export const RESUME_DATA = {
       title: "Baskent Kart",
       techStack: ["React Native", "React Native Web", "TypeScript", "Redux"],
       description:
-        "Contributed to the development of a wallet application for the capital city of Turkey",
+        "Wallet application for Turkey's capital city, built with React Native and React Native Web.",
       link: {
         href: "https://www.baskentkart.com.tr/",
+      },
+    },
+    {
+      title: "JupiterApp",
+      techStack: [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Supabase",
+        "React Query",
+      ],
+      description:
+        "Indie astrology and journaling mobile app built end-to-end, including product design, mobile development, and Supabase backend integration.",
+      link: {
+        href: "",
       },
     },
     {
       title: "Sutbir",
       techStack: ["React Native", "TypeScript"],
       description:
-        "Developed a React Native app for managing livestock and distributing government financial aid to farmers.",
+        "React Native application for livestock management and government financial aid distribution to farmers.",
+      link: {
+        href: "",
+      },
     },
     {
       title: "E-Vital",
       techStack: ["Java", "Android", "IoT"],
       description:
-        "Android application integrated with Arduino that wirelessly monitors vital signs of the human body.",
+        "Android IoT application integrated with Arduino for wireless monitoring of human vital signs.",
+      link: {
+        href: "",
+      },
     },
   ],
 } as const;
