@@ -6,7 +6,7 @@ export const RESUME_DATA = {
   location: "Sofia, Bulgaria",
   locationLink: "https://www.google.com/maps/place/Sofia",
   about:
-    "Senior mobile engineer focused on building production-grade React Native applications and delivering high-quality products.",
+    "Senior mobile engineer focused on building scalable React Native applications and delivering high-quality products.",
   summary:
     "React Native-focused software engineer with experience building and shipping production mobile applications. Skilled in taking products from concept to launch using TypeScript, React, and React Native. Over 5 years of experience working remotely and in hybrid environments with international teams.",
   avatarUrl: "https://avatars.githubusercontent.com/u/13644092?v=4",
