@@ -6,9 +6,9 @@ export const RESUME_DATA = {
   location: "Sofia, Bulgaria",
   locationLink: "https://www.google.com/maps/place/Sofia",
   about:
-    "Software engineer with experience building and shipping production web and mobile applications. Skilled in taking products from concept to launch using TypeScript, React, and React Native. Over 5 years of experience working remotely in international teams.",
+    "Senior Frontend & Mobile Engineer building scalable web and mobile applications.",
   summary:
-    "React Native-focused software engineer with experience building and shipping production mobile applications. Skilled in taking products from concept to launch using TypeScript, React, and React Native. Over 5 years of experience working remotely and in hybrid environments with international teams.",
+    "Software engineer with experience building and shipping production web and mobile applications. Skilled in taking products from concept to launch using TypeScript, React, and React Native. Over 5 years of experience working remotely in international teams.",
   avatarUrl: "https://avatars.githubusercontent.com/u/13644092?v=4",
   personalWebsiteUrl: "https://ozcanozgur.com",
   contact: {
