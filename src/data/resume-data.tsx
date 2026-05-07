@@ -6,9 +6,9 @@ export const RESUME_DATA = {
   location: "Sofia, Bulgaria",
   locationLink: "https://www.google.com/maps/place/Sofia",
   about:
-    "Senior Frontend & Mobile Engineer building scalable web and mobile applications.",
+    "Senior Frontend & Mobile Engineer specializing in scalable React and React Native applications, mobile architecture, and production-grade cross-platform experiences.",
   summary:
-    "Software engineer with experience building and shipping production web and mobile applications. Skilled in taking products from concept to launch using TypeScript, React, and React Native. Over 5 years of experience working remotely in international teams.",
+    "Senior Frontend & Mobile Engineer building production-grade React Native/Expo apps and modern React frontends. Focused on scalable architecture, reusable UI systems, native integrations, performance, and reliable releases. Remote-first collaborator using AI-assisted tooling to iterate faster and strengthen code quality.",
   avatarUrl: "https://avatars.githubusercontent.com/u/13644092?v=4",
   personalWebsiteUrl: "https://ozcanozgur.com",
   contact: {
@@ -49,37 +49,47 @@ export const RESUME_DATA = {
       start: "2025",
       end: null,
       description:
-        "Building enterprise e-commerce solutions and mobile applications with React Native and TypeScript. Technologies: React, React Native, TypeScript",
+        "Building production React Native features for an enterprise retail/e-commerce platform serving multiple large-scale brands. Contributing to reusable UI systems, scalable mobile architecture, modernization efforts, and performance improvements in a remote cross-functional environment. Technologies: React, React Native, TypeScript",
     },
     {
       company: "Innovance Consultancy",
       link: "https://innovance.com.tr/",
       badges: ["Remote"],
-      title: "Software Developer",
+      title: "Senior React Native Developer",
       start: "2023",
       end: "2025",
       description:
-        "Developing and maintaining fintech and high-traffic mobile applications with React and React Native. Technologies: React, React Native, TypeScript",
+        "Delivered and supported fintech, high-traffic mobile applications across React and React Native codebases. Owned production features, upgrades, and stability improvements; collaborated with product and backend teams to ship reliably. Technologies: React, React Native, TypeScript",
     },
     {
       company: "Huawei",
       link: "https://www.huawei.com",
       badges: ["Hybrid"],
-      title: "Software Developer",
+      title: "Mobile Software Engineer",
       start: "2020",
       end: "2023",
       description:
-        "Developed React Native HMS plugins, native integrations with Java and Swift, and supported the developer ecosystem with documentation, demos, and community support. Technologies: React Native, TypeScript, Java, Swift",
+        "Built and shipped React Native HMS Core plugins with native integrations in Java (Android) and Swift (iOS). Owned bridging APIs and developer experience via docs, demos, and ecosystem support to enable production integrations. Technologies: React Native, TypeScript, Java, Swift",
     },
   ],
   skills: [
-    "React",
+    "Expo",
+    "EAS",
     "React Native",
+    "React",
     "TypeScript",
     "JavaScript",
-    "Expo",
     "React Query",
+    "Zustand",
     "Redux",
+    "Mobile Architecture",
+    "Component Systems",
+    "Native Modules",
+    "Performance Optimization",
+    "CI/CD",
+    "REST APIs",
+    "Supabase",
+    "AI-assisted Dev",
     "Java",
     "Swift",
   ],
@@ -95,16 +105,16 @@ export const RESUME_DATA = {
         "React Query",
       ],
       description:
-        "Enterprise e-commerce platform with dynamic CMS powering mobile and web experiences for 20+ retail brands.",
+        "Enterprise retail/e-commerce platform with CMS-driven web and mobile experiences for 20+ brands.",
       link: {
         href: "https://wynshop.com/",
       },
     },
     {
       title: "Huawei HMS Core",
-      techStack: ["Lead React Native Developer", "TypeScript", "Java", "Swift"],
+      techStack: ["React Native", "TypeScript", "Java", "Swift"],
       description:
-        "Developed React Native HMS plugins with native Java and Swift integrations; led development, authored technical docs, and managed community support.",
+        "React Native HMS Core plugins with Java/Swift native bridges, docs, and samples to enable production integrations.",
       link: {
         href: "https://github.com/HMS-Core/hms-react-native-plugin",
       },
@@ -113,7 +123,7 @@ export const RESUME_DATA = {
       title: "Vodafone Pay",
       techStack: ["React", "React Native", "TypeScript"],
       description:
-        "Digital wallet application built with React Native for mobile and back-office solutions.",
+        "React Native digital wallet for consumer mobile and back-office tooling.",
       link: {
         href: "https://www.vodafonepay.com.tr/",
       },
@@ -127,7 +137,7 @@ export const RESUME_DATA = {
         "React Query",
       ],
       description:
-        "React Native mobile wallet application for money transfers with native module integrations.",
+        "React Native money transfer wallet with native module integrations.",
       link: {
         href: "https://letim.app/",
       },
@@ -136,7 +146,7 @@ export const RESUME_DATA = {
       title: "Baskent Kart",
       techStack: ["React Native", "React Native Web", "TypeScript", "Redux"],
       description:
-        "Wallet application for Turkey's capital city, built with React Native and React Native Web.",
+        "React Native + React Native Web wallet application for Ankara.",
       link: {
         href: "https://www.baskentkart.com.tr/",
       },
@@ -151,16 +161,16 @@ export const RESUME_DATA = {
         "React Query",
       ],
       description:
-        "Indie astrology and journaling mobile app built end-to-end, including product design, mobile development, and Supabase backend integration.",
+        "Indie React Native/Expo journaling app with Supabase backend, feature flags, and AI-assisted dev workflow.",
       link: {
         href: "",
       },
     },
     {
-      title: "Sutbir",
+      title: "Sütbir",
       techStack: ["React Native", "TypeScript"],
       description:
-        "React Native application for livestock management and government financial aid distribution to farmers.",
+        "React Native app for livestock management and government aid distribution.",
       link: {
         href: "",
       },
@@ -169,7 +179,7 @@ export const RESUME_DATA = {
       title: "E-Vital",
       techStack: ["Java", "Android", "IoT"],
       description:
-        "Android IoT application integrated with Arduino for wireless monitoring of human vital signs.",
+        "Android + Arduino IoT app for wireless vital-sign monitoring.",
       link: {
         href: "",
       },
