@@ -1,188 +1,78 @@
-import { GitHubIcon, LinkedInIcon, MediumIcon } from "@/components/icons";
+import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
 
 export const RESUME_DATA = {
-  name: "Ozcan Ozgur",
-  initials: "OZ",
+  name: "Anil Bayseferogullari",
+  initials: "AB",
   location: "Sofia, Bulgaria",
   locationLink: "https://www.google.com/maps/place/Sofia",
   about:
-    "Senior Frontend & Mobile Engineer specializing in scalable React and React Native applications, mobile architecture, and production-grade cross-platform experiences.",
+    "Credits & Incentives Senior Analyst | Financing & Cash Flow Management",
   summary:
-    "Senior Frontend & Mobile Engineer building production-grade React Native/Expo apps and modern React frontends. Focused on scalable architecture, reusable UI systems, native integrations, performance, and reliable releases. Remote-first collaborator using AI-assisted tooling to iterate faster and strengthen code quality.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/13644092?v=4",
-  personalWebsiteUrl: "https://ozcanozgur.com",
+    "Finance and operations professional with 8+ years of experience in credits and incentives, project financing, and cash flow management. Experienced in supporting EMEA incentive projects, evaluating financing alternatives, and coordinating compliance with tax, legal, and commercial teams. Combines financial analysis with banking and stakeholder management experience across multinational and capital-intensive businesses.",
+  avatarUrl: "/anil-bayseferogullari.png",
+  personalWebsiteUrl: "",
   contact: {
-    email: "ozcanozgur123@gmail.com",
-    tel: "+359 89 7482970",
+    email: "bayseferanil@gmail.com",
+    tel: "+359879582025",
     social: [
       {
-        name: "GitHub",
-        url: "https://github.com/ozcanozgur",
-        icon: GitHubIcon,
-      },
-      {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/ozcan-ozgur/",
+        url: "https://www.linkedin.com/in/anil-bayseferogullari/",
         icon: LinkedInIcon,
-      },
-      {
-        name: "Medium",
-        url: "https://medium.com/@ozcan-ozgur",
-        icon: MediumIcon,
       },
     ],
   },
   education: [
     {
-      school: "Istanbul Kultur University",
-      degree: "Bachelor's Degree in Computer Science and Engineering",
-      start: "2015",
-      end: "2019",
+      school: "Uludag University",
+      degree: "Bachelor’s degree in economics",
+      start: "Sep 2010",
+      end: "Jun 2014",
     },
   ],
   work: [
     {
-      company: "Wynshop",
-      link: "https://wynshop.com/",
-      badges: ["Remote"],
-      title: "Senior React Native Developer",
-      start: "2025",
+      company: "Cargill Inc.",
+      link: "",
+      badges: ["Sofia, Bulgaria"],
+      title: "Credits & Incentives Senior Analyst",
+      start: "Sep 2020",
       end: null,
       description:
-        "Building production React Native features for an enterprise retail/e-commerce platform serving multiple large-scale brands. Contributing to reusable UI systems, scalable mobile architecture, modernization efforts, and performance improvements in a remote cross-functional environment. Technologies: React, React Native, TypeScript",
+        "Supported EMEA incentive projects, monitoring regulatory compliance, internal governance requirements, and project obligations throughout their lifecycles.\nConducted financial and operational analyses to support investment decisions and incentive applications.\nLed project kick-off meetings and stakeholder discussions, partnering with tax, legal, project, and commercial teams across multiple countries.\nPrepared financial analyses, reports, and compliance documentation for incentive claims, government submissions, and project decision-making.\nDrove process improvement and data-quality initiatives covering validation, reporting, and operational efficiency.",
     },
     {
-      company: "Innovance Consultancy",
-      link: "https://innovance.com.tr/",
-      badges: ["Remote"],
-      title: "Senior React Native Developer",
-      start: "2023",
-      end: "2025",
+      company: "Fernas Group",
+      link: "",
+      badges: ["Ankara, Turkey"],
+      title: "Financial Specialist — Energy, Mining & Infrastructure",
+      start: "Aug 2017",
+      end: "Apr 2020",
       description:
-        "Delivered and supported fintech, high-traffic mobile applications across React and React Native codebases. Owned production features, upgrades, and stability improvements; collaborated with product and backend teams to ship reliably. Technologies: React, React Native, TypeScript",
-    },
-    {
-      company: "Huawei",
-      link: "https://www.huawei.com",
-      badges: ["Hybrid"],
-      title: "Mobile Software Engineer",
-      start: "2020",
-      end: "2023",
-      description:
-        "Built and shipped React Native HMS Core plugins with native integrations in Java (Android) and Swift (iOS). Owned bridging APIs and developer experience via docs, demos, and ecosystem support to enable production integrations. Technologies: React Native, TypeScript, Java, Swift",
+        "Prepared cash flow forecasts and maintained financing, banking, and credit-related reports for energy, mining, and infrastructure projects.\nCollaborated with banks on loans, leasing facilities, guarantee letters, and letters of credit.\nEvaluated financing alternatives against borrowing costs, liquidity needs, and foreign exchange exposure, including USD-denominated options in a volatile currency environment.\nContributed to assessments of subcontractors’ financial and operational capabilities before project awards.\nAssessed counterparty and project financial risks, guarantee requirements, and payment security mechanisms to support financing decisions.",
     },
   ],
   skills: [
-    "Expo",
-    "EAS",
-    "React Native",
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "React Query",
-    "Zustand",
-    "Redux",
-    "Mobile Architecture",
-    "Component Systems",
-    "Native Modules",
-    "Performance Optimization",
-    "CI/CD",
-    "REST APIs",
-    "Supabase",
-    "AI-assisted Dev",
-    "Java",
-    "Swift",
+    "Financial Analysis",
+    "Credits & Incentives",
+    "Regulatory Compliance",
+    "Cash Flow Management",
+    "Risk Assessment",
+    "Stakeholder Management",
+    "Business Partnering",
+    "Financial Reporting",
+    "Credit & Financing Support",
   ],
-  projects: [
-    {
-      title: "Wynshop",
-      techStack: [
-        "React",
-        "React Native",
-        "CMS",
-        "TypeScript",
-        "Redux",
-        "React Query",
-      ],
-      description:
-        "Enterprise retail/e-commerce platform with CMS-driven web and mobile experiences for 20+ brands.",
-      link: {
-        href: "https://wynshop.com/",
-      },
-    },
-    {
-      title: "Huawei HMS Core",
-      techStack: ["React Native", "TypeScript", "Java", "Swift"],
-      description:
-        "React Native HMS Core plugins with Java/Swift native bridges, docs, and samples to enable production integrations.",
-      link: {
-        href: "https://github.com/HMS-Core/hms-react-native-plugin",
-      },
-    },
-    {
-      title: "Vodafone Pay",
-      techStack: ["React", "React Native", "TypeScript"],
-      description:
-        "React Native digital wallet for consumer mobile and back-office tooling.",
-      link: {
-        href: "https://www.vodafonepay.com.tr/",
-      },
-    },
-    {
-      title: "Letim",
-      techStack: [
-        "React Native",
-        "TypeScript",
-        "Native Modules",
-        "React Query",
-      ],
-      description:
-        "React Native money transfer wallet with native module integrations.",
-      link: {
-        href: "https://letim.app/",
-      },
-    },
-    {
-      title: "Baskent Kart",
-      techStack: ["React Native", "React Native Web", "TypeScript", "Redux"],
-      description:
-        "React Native + React Native Web wallet application for Ankara.",
-      link: {
-        href: "https://www.baskentkart.com.tr/",
-      },
-    },
-    {
-      title: "JupiterApp",
-      techStack: [
-        "React Native",
-        "Expo",
-        "TypeScript",
-        "Supabase",
-        "React Query",
-      ],
-      description:
-        "Indie React Native/Expo journaling app with Supabase backend, feature flags, and AI-assisted dev workflow.",
-      link: {
-        href: "",
-      },
-    },
-    {
-      title: "Sütbir",
-      techStack: ["React Native", "TypeScript"],
-      description:
-        "React Native app for livestock management and government aid distribution.",
-      link: {
-        href: "",
-      },
-    },
-    {
-      title: "E-Vital",
-      techStack: ["Java", "Android", "IoT"],
-      description:
-        "Android + Arduino IoT app for wireless vital-sign monitoring.",
-      link: {
-        href: "",
-      },
-    },
+  technicalSkills: [
+    "SAP ERP",
+    "Microsoft Excel",
+    "Power BI",
+    "Microsoft Office 365",
   ],
+  languages: [
+    { name: "Turkish", proficiency: "Native" },
+    { name: "English", proficiency: "Advanced Professional Proficiency" },
+    { name: "French", proficiency: "Elementary" },
+  ],
+  projects: [],
 } as const;

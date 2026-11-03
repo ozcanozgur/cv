@@ -78,3 +78,64 @@
 .print-force-new-page {
   page-break-before: always;
 }
+
+@page {
+  size: A4;
+  margin: 16mm;
+}
+
+@media print {
+  .resume {
+    width: 100%;
+    max-width: none;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .resume-content {
+    max-width: none;
+  }
+
+  /* Normal block flow makes page breaks predictable across print engines. */
+  .resume-content > section {
+    display: block;
+  }
+
+  .resume-content > section > * + * {
+    margin-top: 8pt;
+  }
+
+  .resume-content h2 {
+    font-size: 14pt;
+    line-height: 1.25;
+    break-after: avoid-page;
+  }
+
+  .resume-content h3 {
+    font-size: 11pt;
+  }
+
+  .resume-content h4 {
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+
+  .resume-content p,
+  .resume-content li,
+  .resume-content .tabular-nums {
+    font-size: 9pt;
+    line-height: 1.45;
+  }
+
+  .resume-header,
+  .resume-job,
+  .resume-content > section:not(:has(.resume-job)),
+  .resume-content li {
+    break-inside: avoid-page;
+  }
+
+  .resume-skills > * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
