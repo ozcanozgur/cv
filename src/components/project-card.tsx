@@ -34,14 +34,6 @@ export function ProjectCard({ title, description, tags, link }: Props) {
               title
             )}
           </CardTitle>
-          {link ? (
-            <a
-              href={link}
-              className="hidden break-all font-mono text-[9px] underline print:block"
-            >
-              {link.replace(/^https:\/\/(www\.)?/, "")}
-            </a>
-          ) : null}
           <CardDescription className="font-mono text-xs print:text-[10px]">
             {description}
           </CardDescription>
