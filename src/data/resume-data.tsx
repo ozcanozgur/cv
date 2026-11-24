@@ -1,19 +1,54 @@
 import { GitHubIcon, LinkedInIcon, MediumIcon } from "@/components/icons";
 
+const SKILL_GROUPS = [
+  {
+    name: "Web & mobile",
+    skills: [
+      "React",
+      "React Native",
+      "React Native Web",
+      "TypeScript",
+      "JavaScript",
+      "Expo / EAS",
+    ],
+  },
+  {
+    name: "Architecture & integrations",
+    skills: [
+      "Component Systems",
+      "Native Modules",
+      "REST APIs",
+      "Supabase",
+      "Java / Swift integrations",
+    ],
+  },
+  { name: "State & data", skills: ["React Query", "Zustand", "Redux"] },
+  {
+    name: "Delivery & reliability",
+    skills: [
+      "Azure DevOps",
+      "Fastlane",
+      "CI/CD",
+      "Performance Optimization",
+      "Production Debugging",
+    ],
+  },
+] as const;
+
 export const RESUME_DATA = {
   name: "Ozcan Ozgur",
   initials: "OZ",
   location: "Sofia, Bulgaria",
   locationLink: "https://www.google.com/maps/place/Sofia",
   about:
-    "Senior Frontend & Mobile Engineer specializing in scalable React and React Native applications, mobile architecture, and production-grade cross-platform experiences.",
+    "Senior Software Engineer | Web & Mobile Products, Cross-platform Architecture & Delivery",
   summary:
-    "Senior Frontend & Mobile Engineer building production-grade React Native/Expo apps and modern React frontends. Focused on scalable architecture, reusable UI systems, native integrations, performance, and reliable releases. Remote-first collaborator using AI-assisted tooling to iterate faster and strengthen code quality.",
+    "Software engineer delivering web and mobile products across hospitality, retail, and fintech. Builds React interfaces, cross-platform applications, native integrations, and backend-connected workflows. Experience spans architecture, authentication, CI/CD automation, and production troubleshooting, connecting user-facing features with reliable releases.",
   avatarUrl: "https://avatars.githubusercontent.com/u/13644092?v=4",
   personalWebsiteUrl: "https://ozcanozgur.com",
   contact: {
-    email: "ozcanozgur123@gmail.com",
-    tel: "+359 89 7482970",
+    email: "ozcanozgur.dev@gmail.com",
+    tel: "",
     social: [
       {
         name: "GitHub",
@@ -42,14 +77,24 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Wynshop",
-      link: "https://wynshop.com/",
+      company: "Fourth",
+      link: "https://www.fourth.com/",
+      badges: ["Sofia, Bulgaria"],
+      title: "Senior Software Engineer",
+      start: "May 2026",
+      end: null,
+      description:
+        "Help shape and implement the Manager App’s shared iOS, Android, and web foundation, including platform-specific navigation, state, and authentication.\nUse AI-assisted workflows with project context, architectural guidelines, code review, and validation.\nDeliver manager-facing features and standardize release versioning and automated delivery across native and branded apps.",
+    },
+    {
+      company: "Instacart (Wynshop)",
+      link: "https://company.instacart.com/",
       badges: ["Remote"],
       title: "Senior React Native Developer",
       start: "2025",
-      end: null,
+      end: "May 2026",
       description:
-        "Building production React Native features for an enterprise retail/e-commerce platform serving multiple large-scale brands. Contributing to reusable UI systems, scalable mobile architecture, modernization efforts, and performance improvements in a remote cross-functional environment. Technologies: React, React Native, TypeScript",
+        "Built web and mobile features for a multi-brand retail platform, balancing shared product capabilities with client-specific requirements.\nContributed to reusable UI systems, application architecture, modernization, and performance improvements across React and React Native codebases.\nPlanned and implemented branded checkout experiences, including Apple Pay, Google Pay, and native payment SDK integrations.",
     },
     {
       company: "Innovance Consultancy",
@@ -59,7 +104,7 @@ export const RESUME_DATA = {
       start: "2023",
       end: "2025",
       description:
-        "Delivered and supported fintech, high-traffic mobile applications across React and React Native codebases. Owned production features, upgrades, and stability improvements; collaborated with product and backend teams to ship reliably. Technologies: React, React Native, TypeScript",
+        "Delivered React and React Native features for fintech applications and supporting web tools.\nOwned production features, application upgrades, and stability improvements across TypeScript codebases.\nCollaborated with product and backend teams on integrations and releases.",
     },
     {
       company: "Huawei",
@@ -69,33 +114,36 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2023",
       description:
-        "Built and shipped React Native HMS Core plugins with native integrations in Java (Android) and Swift (iOS). Owned bridging APIs and developer experience via docs, demos, and ecosystem support to enable production integrations. Technologies: React Native, TypeScript, Java, Swift",
+        "Built and shipped React Native HMS Core plugins with Android and iOS integrations in Java and Swift.\nOwned bridging APIs connecting JavaScript applications to native platform capabilities.\nProduced documentation, demos, and integration support for developers using the plugins.",
     },
   ],
-  skills: [
-    "Expo",
-    "EAS",
-    "React Native",
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "React Query",
-    "Zustand",
-    "Redux",
-    "Mobile Architecture",
-    "Component Systems",
-    "Native Modules",
-    "Performance Optimization",
-    "CI/CD",
-    "REST APIs",
-    "Supabase",
-    "AI-assisted Dev",
-    "Java",
-    "Swift",
+  skills: SKILL_GROUPS.flatMap((group) => [...group.skills]),
+  skillGroups: SKILL_GROUPS,
+  featuredProjectTitles: [
+    "Wynshop (Instacart)",
+    "Huawei HMS Core",
+    "Vodafone Pay",
+    "Baskent Kart",
+    "JupiterApp",
   ],
   projects: [
     {
-      title: "Wynshop",
+      title: "Fourth / Manager App",
+      techStack: [
+        "React Native",
+        "React Native Web",
+        "TypeScript",
+        "Azure DevOps",
+        "Fastlane",
+      ],
+      description:
+        "React Native Web proof of concept and cross-platform Manager App foundation spanning phone, tablet, and web. Contributions include biometric/PIN login, regional authentication, and Actions features, alongside Fourth App and branded-app release automation.",
+      link: {
+        href: "https://www.fourth.com/",
+      },
+    },
+    {
+      title: "Wynshop (Instacart)",
       techStack: [
         "React",
         "React Native",
@@ -105,7 +153,7 @@ export const RESUME_DATA = {
         "React Query",
       ],
       description:
-        "Enterprise retail/e-commerce platform with CMS-driven web and mobile experiences for 20+ brands.",
+        "Built web and mobile features for a CMS-driven retail platform serving 20+ brands, contributing shared UI systems and client-specific experiences, including checkout and native payment integrations.",
       link: {
         href: "https://wynshop.com/",
       },
@@ -114,7 +162,7 @@ export const RESUME_DATA = {
       title: "Huawei HMS Core",
       techStack: ["React Native", "TypeScript", "Java", "Swift"],
       description:
-        "React Native HMS Core plugins with Java/Swift native bridges, docs, and samples to enable production integrations.",
+        "Built React Native plugins and Java/Swift bridges for Huawei HMS Core; wrote documentation and samples supporting developer integrations.",
       link: {
         href: "https://github.com/HMS-Core/hms-react-native-plugin",
       },
@@ -123,7 +171,7 @@ export const RESUME_DATA = {
       title: "Vodafone Pay",
       techStack: ["React", "React Native", "TypeScript"],
       description:
-        "React Native digital wallet for consumer mobile and back-office tooling.",
+        "Contributed React Native development to a digital wallet, alongside React-based back-office tooling.",
       link: {
         href: "https://www.vodafonepay.com.tr/",
       },
@@ -146,7 +194,7 @@ export const RESUME_DATA = {
       title: "Baskent Kart",
       techStack: ["React Native", "React Native Web", "TypeScript", "Redux"],
       description:
-        "React Native + React Native Web wallet application for Ankara.",
+        "Contributed to a wallet application for Ankara using React Native and React Native Web for mobile and browser experiences.",
       link: {
         href: "https://www.baskentkart.com.tr/",
       },
@@ -161,7 +209,7 @@ export const RESUME_DATA = {
         "React Query",
       ],
       description:
-        "Indie React Native/Expo journaling app with Supabase backend, feature flags, and AI-assisted dev workflow.",
+        "Built React Native/Expo journaling features with Supabase integration, server-state management, and feature flags.",
       link: {
         href: "",
       },

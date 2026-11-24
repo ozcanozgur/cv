@@ -16,7 +16,7 @@ interface Props {
 
 export function ProjectCard({ title, description, tags, link }: Props) {
   return (
-    <Card className="flex flex-col overflow-hidden border border-muted p-3">
+    <Card className="flex flex-col overflow-hidden border border-muted p-3 print:break-inside-avoid">
       <CardHeader className="">
         <div className="space-y-1">
           <CardTitle className="text-base">
@@ -24,6 +24,7 @@ export function ProjectCard({ title, description, tags, link }: Props) {
               <a
                 href={link}
                 target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-1 hover:underline"
               >
                 {title}{" "}
@@ -33,9 +34,14 @@ export function ProjectCard({ title, description, tags, link }: Props) {
               title
             )}
           </CardTitle>
-          <div className="hidden font-mono text-xs underline print:visible">
-            {link?.replace("https://", "").replace("www.", "").replace("/", "")}
-          </div>
+          {link ? (
+            <a
+              href={link}
+              className="hidden break-all font-mono text-[9px] underline print:block"
+            >
+              {link.replace(/^https:\/\/(www\.)?/, "")}
+            </a>
+          ) : null}
           <CardDescription className="font-mono text-xs print:text-[10px]">
             {description}
           </CardDescription>
